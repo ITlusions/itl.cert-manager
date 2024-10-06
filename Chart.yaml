@@ -1,0 +1,11 @@
+apiVersion: v2
+name: itl-cert-manager
+description: A Helm chart that depends on the cert-manager chart
+version: 0.1.0
+appVersion: "1.0"
+
+dependencies:
+  - name: cert-manager
+    version: "v1.16.0" # Match the targetRevision
+    repository: "https://charts.jetstack.io"
+    alias: cert-manager
